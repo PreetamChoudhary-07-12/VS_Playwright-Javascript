@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Naukri Smoke Suite" parallel="methods" thread-count="2">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.naukri.tests.listeners.SuiteListener"/>
+        <listener class-name="com.naukri.tests.listeners.TestListener"/>
+    </listeners>
+    <test name="Smoke">
+        <classes>
+            <class name="com.naukri.tests.smoke.LoginSmokeTest"/>
+        </classes>
+    </test>
+</suite>
